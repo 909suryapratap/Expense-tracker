@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f6f7fb;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px;
+}
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 28px;
+    box-shadow: 0 4px 18px rgb(15, 14, 14);
+    width: 100%;
+    max-width: 600px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a7682;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.538);
+}
+.balance-box {
+    background-color: #1a7682;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.balance-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+.balance-box p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.summary div {
+    color: #f0f4f5;
+    padding: 15px;
+    border-radius: 12px;
+    width: 48%;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.882);
+}
+.summary .income {
+    color: #4caf50;
+}
+.summary .expense {
+    color: #f44336;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+form input, form select {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+form button {
+    padding: 12px;
+    background-color: #1a7682;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+form button:hover {
+    background-color: #145a63;
+}
+
+#transaction {
+    list-style-type: none;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.transaction {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid;
+    margin-top: 15px;
+}
+.transaction.income {
+    border-color: #4caf50;
+}
+.transaction.expense {
+    border-color: #f44336;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
